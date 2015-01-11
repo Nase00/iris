@@ -1,17 +1,17 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: ruby-rails-sample_development
+  database: iris_development
   pool: 5
 
 test:
   adapter: postgresql
   encoding: unicode
-  database: ruby-rails-sample_test
+  database: iris_test
   pool: 5
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: ruby-rails-sample_production
+  database: iris_production
   pool: 5

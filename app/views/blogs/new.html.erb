@@ -1,0 +1,18 @@
+<% content_for :title, "New post" %>
+
+<div id="content">
+	<%= form_for(@blog) do |f| %>
+		<div class="fields">
+			<%= f.label :title %>
+			<%= f.text_field :title, placeholder: "Title your post" %>
+			<%= f.label :description %>
+			<%= f.text_field :description, placeholder: "Describe your post (optional)" %>
+			<%= f.label :content %>
+			<%= f.text_area :content, placeholder: "Write your post" %>
+		</div>
+
+		<div class="buttons">
+			<%= f.submit "Post" %>
+		</div>
+	<% end %>
+</div>

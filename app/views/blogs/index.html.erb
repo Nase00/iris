@@ -1,8 +1,14 @@
-<% content_for :title, "Blogs" %>
+<% content_for :title, "Blog" %>
 
+<h5 id="top-link"><%= link_to "New blog", new_blog_path %></h5>
 <div id="content">
-	<p>Blogs go here</p>
-	<% @blogs.each do |blog| %>
-	<%= blog.title %>
-	<% end %>
+	<ul>
+		<% @blogs.each do |blog| %>
+		<li>
+			<h3><%= blog.title %></h3>
+			<p><%= blog.content %></p>
+			<h5><%= blog.author.name %></h5>
+			<% end %>
+		</li>
+	</ul>
 </div>

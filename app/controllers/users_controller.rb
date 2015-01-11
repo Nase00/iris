@@ -7,7 +7,6 @@ class UsersController < ApplicationController
 
 	def new
     @user = User.new
-    @title = "Register"
 	end
 
 	def create
@@ -16,7 +15,6 @@ class UsersController < ApplicationController
 	  	session[:user_id] = @user.id
 	    redirect_to :action => :index
 	  else
-	    @title = "Register"
 	    render 'new'
 	  end
 	end

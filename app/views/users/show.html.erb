@@ -1,5 +1,7 @@
 <% content_for :title, @user.name %>
 
+<%= link_to "Return to Users Index", users_path(@users) %>
+
 <%= @user.name %>
 <%= @user.email %>
 <%= @user.twitter %>

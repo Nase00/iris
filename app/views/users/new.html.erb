@@ -1,21 +1,22 @@
 <% content_for :title, "Register" %>
 
-<%= form_for(@user) do |f| %>
+<div id="content">
+	<%= form_for(@user) do |f| %>
+		<div class="fields">
+			<%= f.label :name %>
+			<%= f.text_field :name, placeholder: "Name" %>
+			<%= f.label :email %>
+			<%= f.text_field :email, placeholder: "Email adddress" %>
+			<%= f.label :twitter %>
+			<%= f.text_field :twitter, placeholder: "Twitter (optional)" %>
+			<%= f.label :password %>
+			<%= f.password_field :password %>
+			<%= f.label :password_confirmation, "Confirm password" %>
+			<%= f.password_field :password_confirmation %>
+		</div>
 
-<div class="fields">
-	<%= f.label :name %>
-	<%= f.text_field :name, placeholder: "Name" %>
-	<%= f.label :email %>
-	<%= f.text_field :email, placeholder: "Email adddress" %>
-	<%= f.label :twitter %>
-	<%= f.text_field :twitter, placeholder: "Twitter (optional)" %>
-	<%= f.label :password %>
-	<%= f.password_field :password %>
-	<%= f.label :password_confirmation, "Confirm password" %>
-	<%= f.password_field :password_confirmation %>
-</div>
-
-<div class="buttons">
-	<%= f.submit "Register" %>
-</div>
-<% end %>`
+		<div class="buttons">
+			<%= f.submit "Register" %>
+		</div>
+	<% end %>
+<div id="content">

@@ -1,7 +1,8 @@
 <% content_for :title, @user.name %>
 
-<h5><%= link_to "Return to Users Index", users_path(@users) %></h5>
-
-<%= @user.name %>
-<%= @user.email %>
-<%= @user.twitter %>
+<h5 id="return-link"><%= link_to "Return to Users Index", users_path(@users) %></h5>
+<div id="content">
+	<%= @user.name %>
+	<%= @user.email %>
+	<%= @user.twitter %>
+</div>

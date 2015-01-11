@@ -42,7 +42,7 @@ a:hover {
 nav {
 	position: absolute;
 	display: inline-block;
-	margin: 0 100px auto;
+	margin: 0 80px auto;
 	padding: 2px;
 	height: 50px;
 	font-weight: bolder;
@@ -81,7 +81,7 @@ a.nav-link:hover:after {
 }
 
 #content, #content-title, #return-link {
-	max-width: 60%;
+	max-width: 80%;
 	min-width: 500px;
 	margin: 0px auto auto;
 }
@@ -92,4 +92,33 @@ a.nav-link:hover:after {
 }
 #content-title {
 	margin: 25px auto auto;
+}
+
+
+a.footer-link {
+	display: inline-block;
+	margin: 4px;
+	padding: 2px;
+	width: 250px;
+	text-align: center;
+	text-decoration: none;
+	color: #D9411E;
+	border: 4px solid #D9411E;
+}
+a.footer-link:hover:before {
+   content: "[ ";
+}
+a.footer-link:hover:after {
+   content: " ]";
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 2px;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    color: #D9411E;
+    background-color: #333333;
 }

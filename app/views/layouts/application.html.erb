@@ -7,6 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<nav>
+		<%= link_to 'Index', '/', class: "nav-link" %>
+		<%= link_to 'Blogs', blogs_path(@blogs), class: "nav-link" %>
+		<%= link_to 'Users', users_path(@users), class: "nav-link" %>
+	</nav>	
 	<header>
 		<h1>Iris</h1>
 		<section id="session">
@@ -18,11 +23,6 @@
 			<% end %>
 		</section>
 	</header>
-	<nav>
-		<%= link_to 'Index', '/', class: "nav-link" %>
-		<%= link_to 'Blogs', blogs_path(@blogs), class: "nav-link" %>
-		<%= link_to 'Users', users_path(@users), class: "nav-link" %>
-	</nav>	
 	<h2 id="content-title"><%= yield(:title) %></h2>
 	<%= yield %>
 </body>

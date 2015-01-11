@@ -1,24 +1,17 @@
-default: &default
+development:
   adapter: postgresql
   encoding: unicode
+  database: ruby-rails-sample_development
   pool: 5
 
-development:
-adapter: postgresql
-host: localhost
-database: iris_development
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: ruby-rails-sample_test
+  pool: 5
 
 production:
-adapter: postgresql
-host: localhost
-database: iris_production
-
-# test:
-#   <<: *default
-#   database: iris_test
-
-# production:
-#   <<: *default
-#   database: iris_production
-#   username: iris
-#   password: <%= ENV['IRIS_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  database: ruby-rails-sample_production
+  pool: 5
